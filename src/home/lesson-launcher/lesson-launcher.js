@@ -8,12 +8,9 @@ const lessonLauncher = () => {
         const allLessonViews = document.getElementsByClassName('lesson-launcher__content')
         const activeLesson = document.getElementById(`lesson-view-${currentLesson}`)
 
-        console.log(allLessonViews)
-
-
-        for (var i = 0; i < allLessonViews.length; i++) {
-            allLessonViews[i].classList.add('-closed')
-        }
+        Array.prototype.forEach.call(allLessonViews, function(lessonView) {
+            lessonView.classList.add('-closed')
+        });
 
         if (activeLesson) {
             activeLesson.classList.remove('-closed')
