@@ -5,6 +5,7 @@
     --color-blue: #3e4dfb;
     --color-red: #ff3454;
     --color-black: #1C2E36;
+    --color-darker: #18282F;
 
     --header-height: 200px;
 }
@@ -36,6 +37,20 @@ body {
     font-weight: 300;
     font-size: 48px;
     line-height: 1;
+    position: relative;
+}
+
+.app-heading::after {
+    background-color: var(--color-white);
+    content: '';
+    display: block;
+    height: 1px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: -30px;
+    transform: translateX(-50%);
 }
 
 .app-main {

@@ -15,27 +15,51 @@
 
     <main class="app-main">
         <div class="app-lesson-select">
-            <div class="lesson-launcher" id="lesson-view-1">
-    <button class="launcher-button__launcher" id="launcher-button-1">
+            <div class="lesson-launcher">
+    <a href="#/lesson-1" class="launcher-button__launcher" data-launcher="1" id="launcher-button-1">
     <span class="launcher-button__num">Lesson 1</span>
     <span class="launcher-button__name">pseudo elements</span>
-</button>
+</a>
 
-    <div class="lesson-launcher__content">
-        <div class="lesson-1">
+    <div class="lesson-launcher__content" id="lesson-view-1">
+        <div class="lesson-launcher__content-header">
+            <div class="lesson-launcher__content-row">
+                <span class="lesson-launcher__content-lesson">Lesson 1:</span>
+                <span class="lesson-launcher__content-name">pseudo elements</span>
+            </div>
+            <div class="lesson-launcher__content-row">
+                <a href="#/" class="simple-button">close</a>
+
+            </div>
+        </div>
+        <div class="lesson-launcher__content-playground">
+            <div class="lesson-1">
     <input type="checkbox"> Checkbox
 </div>
+        </div>
     </div>
-</div><div class="lesson-launcher" id="lesson-view-2">
-    <button class="launcher-button__launcher" id="launcher-button-2">
+</div><div class="lesson-launcher">
+    <a href="#/lesson-2" class="launcher-button__launcher" data-launcher="2" id="launcher-button-2">
     <span class="launcher-button__num">Lesson 2</span>
     <span class="launcher-button__name">custom checkbox</span>
-</button>
+</a>
 
-    <div class="lesson-launcher__content">
-        <div class="lesson-1">
+    <div class="lesson-launcher__content" id="lesson-view-2">
+        <div class="lesson-launcher__content-header">
+            <div class="lesson-launcher__content-row">
+                <span class="lesson-launcher__content-lesson">Lesson 2:</span>
+                <span class="lesson-launcher__content-name">custom checkbox</span>
+            </div>
+            <div class="lesson-launcher__content-row">
+                <a href="#/" class="simple-button">close</a>
+
+            </div>
+        </div>
+        <div class="lesson-launcher__content-playground">
+            <div class="lesson-1">
     <input type="checkbox"> Checkbox
 </div>
+        </div>
     </div>
 </div>
         </div>
