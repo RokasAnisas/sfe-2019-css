@@ -7,6 +7,9 @@ const cssConcat = require('gulp-concat-css');
 const csso = require('gulp-csso');
 const browserSync = require('browser-sync').create();
 const fileInclude = require('gulp-file-include');
+const babel = require('gulp-babel');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 function clean() {
     return src(`${DIST_DIR}/*`)
@@ -26,6 +29,14 @@ function html() {
         .pipe(dest(DIST_DIR))
 }
 
+function js() {
+    return src(`${SRC_DIR}/**/*.js`)
+        .pipe(babel({ presets: ['@babel/env'] }))
+        .pipe(concat('scripts.min.js'))
+        .pipe(uglify())
+        .pipe(dest(DIST_DIR))
+}
+
 function serve() {
     browserSync.init({
         server: {
@@ -42,8 +53,9 @@ exports.css = css;
 exports.clean = clean;
 exports.serve = serve;
 exports.html = html;
+exports.js = js;
 
-const build = parallel(html, css);
+const build = parallel(html, css, js);
 
 exports.dev = series(clean, build, serve);
 exports.default = series(clean, build);
