@@ -1,0 +1,20 @@
+{
+  "name": "sfe-2019-css",
+  "version": "1.0.0",
+  "description": "CSS Tips and Tricks: practical materials",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RokasAniss/sfe-2019-css.git"
+  },
+  "keywords": [],
+  "author": "Rokas Anisas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RokasAniss/sfe-2019-css/issues"
+  },
+  "homepage": "https://github.com/RokasAniss/sfe-2019-css#readme"
+}
