@@ -1,7 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap&subset=latin-ext');
+
 :root {
-    --accent-color: #451;
+    --color-white: #fff;
+    --color-blue: #3e4dfb;
+    --color-red: #ff3454;
+    --color-black: #1C2E36;
+
+    --header-height: 200px;
+}
+* {
+    color: var(--color-white);
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    background-color: var(--accent-color);
+    background-color: var(--color-black);
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.app-header {
+    align-items: center;
+    display: flex;
+    height: var(--header-height);
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.app-heading {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.app-main {
+    height: 100vh;
+    margin-top: var(--header-height);
+    width: 100vw;
+}
+
+.app-lesson-select {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
 }

@@ -1,0 +1,30 @@
+.lesson-launcher {
+    display: flex;
+}
+
+.lesson-launcher__launcher {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.lesson-launcher__launcher-num {
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 1.4;
+}
+
+.lesson-launcher__launcher-name {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.lesson-launcher__content {
+    display: none;
+}

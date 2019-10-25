@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.min.css">
-    <title>Document</title>
+    <title>CSS Tips and Tricks</title>
 </head>
 <body>
-    <h1>Anna</h1>
+    <header class="app-header">
+        <h1 class="app-heading">CSS Tips and Tricks</h1>
+    </header>
 
-    @@include('../LESSONS/lesson-1/lesson-1.html')
+    <main class="app-main">
+        <div class="app-lesson-select">
+            @@loop('./lesson-launcher/lesson-launcher.html', [
+                { "title": "pseudo elements", "count": "1","template": "lesson-1" },
+                { "title": "custom checkbox", "count": "2","template": "lesson-1" }
+            ])
+        </div>
+    </main>
 </body>
 </html>

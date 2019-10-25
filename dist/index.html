@@ -5,19 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.min.css">
-    <title>Document</title>
+    <title>CSS Tips and Tricks</title>
 </head>
 <body>
-    <h1>Anna</h1>
+    <header class="app-header">
+        <h1 class="app-heading">CSS Tips and Tricks</h1>
+    </header>
 
-    <style>
-    .lesson-1 {
-        display: block;
-    }
-</style>
+    <main class="app-main">
+        <div class="app-lesson-select">
+            <div class="lesson-launcher" id="lesson-view-1">
+    <button class="lesson-launcher__launcher">
+        <span class="lesson-launcher__launcher-num">Lesson 1</span>
+        <span class="lesson-launcher__launcher-name">pseudo elements</span>
+    </button>
 
-<div class="lesson-1">
+    <div class="lesson-launcher__content">
+        <div class="lesson-1">
     <input type="checkbox"> Checkbox
 </div>
+    </div>
+</div><div class="lesson-launcher" id="lesson-view-2">
+    <button class="lesson-launcher__launcher">
+        <span class="lesson-launcher__launcher-num">Lesson 2</span>
+        <span class="lesson-launcher__launcher-name">custom checkbox</span>
+    </button>
+
+    <div class="lesson-launcher__content">
+        <div class="lesson-1">
+    <input type="checkbox"> Checkbox
+</div>
+    </div>
+</div>
+        </div>
+    </main>
 </body>
 </html>

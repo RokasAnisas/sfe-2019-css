@@ -9,12 +9,12 @@ const browserSync = require('browser-sync').create();
 const fileInclude = require('gulp-file-include');
 
 function clean() {
-    return src(DIST_DIR)
+    return src(`${DIST_DIR}/*`)
         .pipe(gulpClean())
 }
 
 function css() {
-    return src([`${SRC_DIR}/home/*.css`, `${SRC_DIR}/LESSONS/**/*.css`])
+    return src([`${SRC_DIR}/home/**/*.css`, `${SRC_DIR}/LESSONS/**/*.css`])
         .pipe(cssConcat('styles.min.css'))
         .pipe(csso())
         .pipe(dest(DIST_DIR))
