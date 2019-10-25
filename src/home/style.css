@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap&subset=latin-ext');
+
+:root {
+    --color-white: #fff; 
+    --color-blue: #3e4dfb;
+    --color-red: #ff3454;
+    --color-black: #1C2E36;
+    --color-darker: #18282F;
+
+    --header-height: 200px;
+}
+* {
+    color: var(--color-white);
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--color-black);
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.app-header {
+    align-items: center;
+    display: flex;
+    height: var(--header-height);
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.app-heading {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 1;
+    position: relative;
+}
+
+.app-heading::after {
+    background-color: var(--color-white);
+    content: '';
+    display: block;
+    height: 1px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: -30px;
+    transform: translateX(-50%);
+}
+
+.app-main {
+    height: 100vh;
+    margin-top: var(--header-height);
+    width: 100vw;
+}
+
+.app-lesson-select {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
