@@ -6,6 +6,7 @@ const gulpClean = require('gulp-clean');
 const cssConcat = require('gulp-concat-css');
 const csso = require('gulp-csso');
 const browserSync = require('browser-sync').create();
+const fileInclude = require('gulp-file-include');
 
 function clean() {
     return src(DIST_DIR)
@@ -21,6 +22,7 @@ function css() {
 
 function html() {
     return src(`${SRC_DIR}/home/index.html`)
+        .pipe(fileInclude({prefix: '@@'}))
         .pipe(dest(DIST_DIR))
 }
 
