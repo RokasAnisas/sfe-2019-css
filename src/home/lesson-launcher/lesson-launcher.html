@@ -1,8 +1,5 @@
 <div class="lesson-launcher" id="lesson-view-@@count">
-    <button class="lesson-launcher__launcher">
-        <span class="lesson-launcher__launcher-num">Lesson @@count</span>
-        <span class="lesson-launcher__launcher-name">@@title</span>
-    </button>
+    @@include('../launcher-button/launcher-button.html', {"title": "@@title","count":"@@count"})
 
     <div class="lesson-launcher__content">
         @@include('../../LESSONS/@@template/@@template.html')
