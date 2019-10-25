@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap&subset=latin-ext');
 
 :root {
-    --color-white: #fff;
+    --color-white: #fff; 
     --color-blue: #3e4dfb;
     --color-red: #ff3454;
     --color-black: #1C2E36;
@@ -61,7 +61,8 @@ body {
 
 .app-lesson-select {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
+    justify-content: space-between;
 }
