@@ -4,7 +4,7 @@
   "description": "CSS Tips and Tricks: practical materials",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/RokasAniss/sfe-2019-css#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0"
+    "gulp-clean": "^0.4.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-csso": "^3.0.1"
   }
 }

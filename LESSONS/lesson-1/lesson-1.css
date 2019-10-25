@@ -1,0 +1,7 @@
+.lesson-1 {
+    background-color: red;
+}
+
+.lesson-1:hover {
+    background-color: blue;
+}

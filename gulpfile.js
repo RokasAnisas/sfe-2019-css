@@ -2,6 +2,8 @@ const { src, dest, parallel, series } = require('gulp');
 const DIST_DIR = 'dist';
 
 const gulpClean = require('gulp-clean');
+const cssConcat = require('gulp-concat-css');
+const csso = require('gulp-csso');
 
 function clean() {
     return src(DIST_DIR)
@@ -9,8 +11,10 @@ function clean() {
 }
 
 function css() {
-    return src('LESSONS/**/*.css')
-        .pipe(dest(`${ DIST_DIR }/css`))
+    return src(['home/*.css','LESSONS/**/*.css'])
+        .pipe(cssConcat('styles.min.css'))
+        .pipe(csso())
+        .pipe(dest(DIST_DIR))
 }
 
 exports.css = css;
