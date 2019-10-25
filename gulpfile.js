@@ -12,7 +12,7 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
 function clean() {
-    return src(`${DIST_DIR}/*`)
+    return src(`${DIST_DIR}/*`, {allowEmpty: true})
         .pipe(gulpClean())
 }
 
