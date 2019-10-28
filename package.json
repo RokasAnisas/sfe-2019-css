@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp",
-    "start": "code start.code-workspace && gulp dev",
+    "start": "gulp dev",
+    "start:vsc": "code start.code-workspace && gulp dev",
     "serve": "gulp dev"
   },
   "repository": {
