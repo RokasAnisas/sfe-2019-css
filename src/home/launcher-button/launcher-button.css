@@ -2,7 +2,7 @@
     --border-width: 2px;
 }
 
-.launcher-button__launcher {
+.app-launcher-button__launcher {
     background-color: transparent;
     border-radius: 5px;
     border: var(--border-width) solid transparent;
@@ -18,19 +18,19 @@
     transition: all 0.2s ease;
 }
 
-.launcher-button__launcher:hover {
+.app-launcher-button__launcher:hover {
     border: var(--border-width) solid #fff;
 }
 
-.launcher-button__launcher:hover > .launcher-button__num::after {
+.app-launcher-button__launcher:hover > .app-launcher-button__num::after {
     transform: scaleX(1);
 }
 
-.launcher-button__launcher:hover > .launcher-button__name {
+.app-launcher-button__launcher:hover > .app-launcher-button__name {
     transform: translateX(40px);
 }
 
-.launcher-button__num {
+.app-launcher-button__num {
     font-size: 60px;
     line-height: 1;
     margin-bottom: 10px;
@@ -38,7 +38,7 @@
     text-transform: uppercase;
 }
 
-.launcher-button__num::after {
+.app-launcher-button__num::after {
     background-color: var(--color-red);
     bottom: 0;
     content: '';
@@ -55,7 +55,7 @@
     z-index: -1;
 }
 
-.launcher-button__name {
+.app-launcher-button__name {
     font-size: 22px;
     font-weight: 300;
     line-height: 1;
