@@ -1,8 +1,8 @@
-.lesson-launcher {
+.app-lesson-launcher {
     display: flex;
 }
 
-.lesson-launcher__content {
+.app-lesson-launcher__content {
     align-items: center;
     background-color: var(--color-black);
     display: flex;
@@ -19,22 +19,22 @@
     transform: translateX(0);
 }
 
-.lesson-launcher__content.-closed {
+.app-lesson-launcher__content.-closed {
     opacity: 0;
     transform: translateX(-100%);
 }
 
-.lesson-launcher__content-header {
+.app-lesson-launcher__content-header {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.lesson-launcher__content-row {
+.app-lesson-launcher__content-row {
     margin-bottom: 40px;
 }
 
-.lesson-launcher__content-lesson {
+.app-lesson-launcher__content-lesson {
     display: inline-block;
     font-size: 20px;
     line-height: 1;
@@ -43,14 +43,14 @@
     font-weight: 700;
 }
 
-.lesson-launcher__content-name {
+.app-lesson-launcher__content-name {
     display: inline-block;
     font-size: 20px;
     font-weight: 300;
     line-height: 1;
 }
 
-.lesson-launcher__content-playground {
+.app-lesson-launcher__content-playground {
     width: 100%;
     display: flex;
     align-items: center;
