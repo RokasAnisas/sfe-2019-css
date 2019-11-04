@@ -68,3 +68,12 @@ body {
     margin: 0 auto;
     justify-content: space-between;
 }
+
+/* Sneaky 3rd party */
+.app-lesson-launcher__content-playground.-lesson-2 button {
+    background-color: blue;
+}
+
+.app-lesson-launcher__content-playground.-lesson-2 button span {
+    color: #fff;
+}
