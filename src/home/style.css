@@ -14,13 +14,13 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
     color: var(--color-white);
     margin: 0;
     padding: 0;
 }
 
 body {
+    box-sizing: border-box;
     background-color: var(--color-black);
     overflow: hidden;
 }
