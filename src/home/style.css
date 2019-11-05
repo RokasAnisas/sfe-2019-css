@@ -1,25 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap&subset=latin-ext');
 
 :root {
-    --color-white: #fff; 
+    --color-white: #fff;
     --color-blue: #3e4dfb;
     --color-red: #ff3454;
     --color-black: #1C2E36;
     --color-darker: #18282F;
 
     --header-height: 200px;
-}
-* {
-    color: var(--color-white);
     font-family: 'Lato', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: var(--color-black);
-    box-sizing: border-box;
-    margin: 0;
     overflow: hidden;
-    padding: 0;
 }
 
 .app-header {
