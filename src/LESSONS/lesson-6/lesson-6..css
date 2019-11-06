@@ -3,8 +3,6 @@
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    height: 50%;
-    width: 50%;
 }
 
 .lesson-6 > div {
@@ -13,19 +11,20 @@
     display: flex;
     justify-content: center;
     margin: 5px;
+    flex-shrink: 0;
 }
 .lesson-6 > div:nth-child(even) {
     background-color: #ff3454;
 }
 
 .vmaxed {
-    height: 5vmax;
-    width: 5vmax;
+    height: 7vmax;
+    width: 7vmax;
 }
 
 .vmined {
-    height: 5vmin;
-    width: 5vmin;
+    height: 7vmin;
+    width: 7vmin;
 }
 
 .emmed {
@@ -41,4 +40,9 @@
 .percent {
     height: 20%;
     width: 20%;
+}
+
+.pexed {
+    width: 100px;
+    height: 100px;
 }
