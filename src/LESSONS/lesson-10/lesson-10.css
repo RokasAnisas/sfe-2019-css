@@ -17,3 +17,8 @@
 .flying-wizard__power {
     fill: #ef5798;
 }
+.checkbox {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
