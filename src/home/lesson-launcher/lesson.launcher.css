@@ -51,13 +51,14 @@
 }
 
 .app-lesson-launcher__content-playground {
-    width: 100%;
-    display: flex;
     align-items: center;
-    width: 80%;
+    background-color: var(--color-darker);
+    display: flex;
     height: 80%;
+    justify-content: center;
     min-height: 400px;
     min-width: 600px;
-    background-color: var(--color-darker);
-    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    width: 80%;
 }
