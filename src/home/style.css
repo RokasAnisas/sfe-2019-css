@@ -64,10 +64,20 @@ body {
 }
 
 .app-lesson-select {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 80%;
     margin: 0 auto;
-    justify-content: space-between;
+}
+
+@media screen and (min-width: 1000px) {
+    .app-lesson-select {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .app-lesson-select {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
