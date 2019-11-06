@@ -1,10 +1,10 @@
 <div class="app-lesson-launcher">
-    @@include('../launcher-button/launcher-button.html', {"title": "@@title","count":"@@count"})
+    @@include('../launcher-button/launcher-button.html', {"type": "@@type","title": "@@title","count":"@@count"})
 
     <div class="app-lesson-launcher__content" id="lesson-view-@@count">
         <div class="app-lesson-launcher__content-header">
             <div class="app-lesson-launcher__content-row">
-                <span class="app-lesson-launcher__content-lesson">Lesson @@count:</span>
+                <span class="app-lesson-launcher__content-lesson">@@type @@count:</span>
                 <span class="app-lesson-launcher__content-name">@@title</span>
             </div>
             <div class="app-lesson-launcher__content-row">
