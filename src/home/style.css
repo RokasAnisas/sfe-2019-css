@@ -68,6 +68,8 @@ body {
     grid-template-columns: 1fr;
     width: 80%;
     margin: 0 auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
 
 @media screen and (min-width: 1000px) {
