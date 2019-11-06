@@ -65,11 +65,11 @@ body {
 
 .app-lesson-select {
     display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
-    margin: 0 auto;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+    margin: 0 auto 80px;
+    width: 80%;
 }
 
 @media screen and (min-width: 1000px) {
