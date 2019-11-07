@@ -18,7 +18,6 @@ const lessonLauncher = () => {
     }
 
     setActiveLesson()
-
 }
 
 lessonLauncher();
