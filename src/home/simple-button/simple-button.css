@@ -12,3 +12,8 @@
     background-color: var(--color-white);
     color: var(--color-black);
 }
+@media print {
+    .app-simple-button {
+        display: none;
+    }
+}
