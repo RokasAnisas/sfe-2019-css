@@ -29,4 +29,14 @@
     padding: 10px;
 }
 
-@media screen and (min-width: 900px) {}
+@media screen and (min-width: 900px) {
+    .little-grid {
+        display: flex;
+    }
+    .little-grid__left {
+        flex-grow: 1;
+    }
+    .little-grid__right {
+        flex-grow: 1;
+    }
+}

@@ -5,11 +5,18 @@
 .three.classy.selectors {
     color: red;
 }
-
+.three.three.classy.selectors{
+    color: white;
+}
 .important-selector {
     color: red !important;
 }
-
+.important-selector.important-selector{
+    color:white !important;
+}
 #id-selecta.id-selecta {
     color: red !important;
+}
+#id-selecta.id-selecta#id-selecta {
+    color: white !important;
 }

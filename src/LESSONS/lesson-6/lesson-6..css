@@ -38,6 +38,7 @@
 .remmed {
     height: 10rem;
     width: 10rem;
+    font-size: 2rem;
 }
 
 .percent {
@@ -48,4 +49,5 @@
 .pexed {
     width: 100px;
     height: 100px;
+    font-size: 16px;
 }

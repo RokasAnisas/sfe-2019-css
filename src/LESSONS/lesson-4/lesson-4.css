@@ -2,3 +2,18 @@
     align-items: center;
     display: flex;
 }
+
+.fakebox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+    padding: 2px;
+}
+
+.input {
+    display: none;
+}
+
+.input:checked + .fakebox {
+    background-color: red;
+}

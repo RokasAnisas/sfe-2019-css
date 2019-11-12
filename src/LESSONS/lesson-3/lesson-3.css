@@ -4,6 +4,17 @@
     background-size: contain;
     height: 250px;
     width: 500px;
+    position: relative;
+}
+
+.large-image::before {
+    /* background-image: url("https://picsum.photos/50/50?image=1"); */
+    content: url("https://picsum.photos/50/50?image=1");
+    /* height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50px; */
 }
 
 .small-image {
