@@ -6,8 +6,7 @@
   "scripts": {
     "build": "gulp",
     "start": "gulp dev",
-    "start:vsc": "code start.code-workspace && gulp dev",
-    "serve": "gulp dev"
+    "start:vsc": "code start.code-workspace && gulp dev"
   },
   "repository": {
     "type": "git",
