@@ -27,5 +27,6 @@
 }
 
 .box-2 {
+    display: none;
     box-sizing: border-box;
 }

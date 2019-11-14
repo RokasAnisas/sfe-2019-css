@@ -2,3 +2,21 @@
     align-items: center;
     display: flex;
 }
+
+input {
+    opacity: 0;
+    position: absolute;
+}
+.fakebox {
+    border: 1px solid red;
+    width: 10px;
+    height: 10px;
+}
+
+input:checked + .fakebox {
+    background: red;
+}
+
+input:focus + .fakebox {
+    border: 1px solid blue;
+}

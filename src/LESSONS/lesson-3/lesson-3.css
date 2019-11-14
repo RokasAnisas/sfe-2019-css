@@ -4,11 +4,25 @@
     background-size: contain;
     height: 250px;
     width: 500px;
+    position: relative;
 }
 
-.small-image {
+/* .small-image {
     background-image: url("https://picsum.photos/50/50?image=1");
     content: '';
     height: 50px;
     width: 50px;
+} */
+/* .large-image::before {
+    content:'';
+    background-image: url("https://picsum.photos/50/50?image=1");
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.large-image::before {
+    content: url("https://picsum.photos/50/50?image=1");
 }

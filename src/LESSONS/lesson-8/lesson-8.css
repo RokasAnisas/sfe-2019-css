@@ -10,7 +10,7 @@
 
 @media print {
     .print-link::after {
-        content: " (" attr(href) ")";
+        content: "(" attr(href) ")";
     }
 }
 
@@ -29,4 +29,14 @@
     padding: 10px;
 }
 
-@media screen and (min-width: 900px) {}
+@media screen and (min-width: 900px) {
+    .little-grid {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .little-grid__left,
+    .little-grid__right {
+        flex-grow: 1;
+    }
+}

@@ -1,4 +1,12 @@
-/* import some fonts from here https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css?family=Jomolhari|Roboto&display=swap');
 .lesson-7 {
     display: block;
+}
+
+h1 {
+    font-family: 'Jomolhari', 'Times New Roman',serif;
+}
+
+h2 {
+    font-family: 'Roboto', 'Arial',sans-serif;
 }
